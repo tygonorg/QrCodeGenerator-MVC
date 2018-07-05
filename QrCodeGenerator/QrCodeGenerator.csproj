@@ -97,6 +97,7 @@
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <Content Include="App_Data\logo.png" />
+    <Content Include="App_Data\logo2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

@@ -1,9 +1,9 @@
-﻿<h2>Demo Hỗ trợ tạo QCode!</h2>
+﻿<h2>Demo QCode Generator with logo!</h2>
 <div>
     @using (Html.BeginForm("Index", "Home", FormMethod.Post))
     {
-        @Html.Label("Nhap Token : ") @Html.TextBox("token")
-        <input type="submit" value="Tạo QRCode" />
+        @Html.Label("Input Token : ") @Html.TextBox("token")
+        <input type="submit" value="Make QRCode" />
     }
     @if (ViewData["gen"] != null)
     {

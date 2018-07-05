@@ -55,8 +55,8 @@ namespace QrCodeGenerator.Controllers
 		public ActionResult Imagez(String token)
         {
 			CodeQrBarcodeDraw qrCode = BarcodeDrawFactory.CodeQr;
-            Image img = qrCode.Draw(token, 50, 6);
-            string path = Server.MapPath("~/App_Data/logo.png");
+            Image img = qrCode.Draw(token, 100, 6);
+            string path = Server.MapPath("~/App_Data/logo2.png");
 
             Image image_m = Image.FromFile(path);
 
