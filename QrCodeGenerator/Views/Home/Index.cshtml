@@ -1,0 +1,19 @@
+﻿<h2>Demo Hỗ trợ tạo QCode!</h2>
+<div>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        @Html.Label("Nhap Token : ") @Html.TextBox("token")
+        <input type="submit" value="Tạo QRCode" />
+    }
+    @if (ViewData["gen"] != null)
+    {
+        if ((bool)ViewData["gen"] == true)
+        {
+<p>
+    <img src='@Url.Action("Imagez","Home",new { token = (String)ViewData["token"]})' alt="" />
+
+</p>
+}
+}
+
+</div>
